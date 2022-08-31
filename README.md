@@ -5,6 +5,27 @@
 # AWS SERVICES USED:
 # # Front-end
 
-   1) Cloudfront
-   2) S3-static webhosting
-   3) DNS - ROUTE 53 / Go-Daddy
+   - Cloudfront
+   - S3-static webhosting
+   - DNS - ROUTE 53 / Go-Daddy
+
+# # API-BACKEND:
+   
+   - Elastic beanstalk multiple envirorments - cross api
+   - RDS - Postgres sql
+   - Private-api s3 buckets
+   - EC2-instance for deployment , migration on elasticbeanstalk / RDS through cli
+
+# # PUSH NOTIFICATION SERVICES:
+   
+   - FIREBASE / IOS integration using SNS
+   - Amazon Simple Email Service
+   
+# # VPC:
+
+   - IGW > Routable > SUBNETS
+        - PUBLIC SUBNETS >REGION A,B,C > Elastic beanstalk instances , loadbalancer , NAT GATEWAY , Cron-Queue server
+        - PRIVATE SUBNETS > REGION A,B,C > MULTI-AZ RDS
+        
+  
+   
